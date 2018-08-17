@@ -71,3 +71,8 @@ typings/
 
 # Serverless directories
 .serverless
+
+
+# Css
+
+/css/*.css

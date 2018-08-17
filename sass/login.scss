@@ -1,0 +1,61 @@
+@import 'variables';
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: $roboto_font;
+}
+
+
+body {
+  background: radial-gradient(at bottom left, lighten($primary_color, 30%), $primary_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.loginContainer {
+  height: 549px;
+  width: 400px;
+  background-color: $white_color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  -webkit-box-shadow: 0px 28px 80px 4px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 28px 80px 4px rgba(0,0,0,0.25);
+  box-shadow: 0px 28px 80px 4px rgba(0,0,0,0.25);
+
+}
+
+.loginContainer__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $darkBlue_color;
+  width: 100%;
+
+  padding-top: 70px;
+  padding-bottom: 70px;
+  color: $white_color;
+
+  h1{
+    font-size: 44px;
+  }
+}
+
+.loginContainer__loginButton {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 38px;
+  text-decoration: none;
+  color: $white_color;
+  background-color: $accent_color;  
+  border-radius: 100px;
+}
