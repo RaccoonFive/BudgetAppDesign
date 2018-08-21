@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/reset.css"> 
+  <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/login.css">
-  <title>Budget App Design</title>
+  <title>Budget App Design</title> 
 </head>
 <body>
   <div class="loginContainer">
@@ -15,8 +16,12 @@
       <h1>Budget App</h1>            
     </div>    
 
-    <div class="loginContainer__content">
+    <form class="loginContainer__form" method="GET" action="dashboard.html">
+      <input type="text" value="" placeholder="Nom d'utilisateur">
+      <input type="password" value="" placeholder="Mot de passe">
+    </form>
 
+    <div class="loginContainer__content">
       <a href="dashboard.html" class="loginContainer__loginButton">Login</a>
     </div>
 
