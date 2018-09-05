@@ -62,8 +62,9 @@ input:focus {
   height: 26px;
   line-height: 26px;
   vertical-align: middle;
+  background: #3498DB;
   padding-left: 10px;
-  background: #3498DB; }
+  box-sizing: border-box; }
   .breadcrumb .breadcrumb__link {
     color: #ffffff;
     font-size: 16px;
