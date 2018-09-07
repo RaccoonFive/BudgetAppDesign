@@ -99,3 +99,39 @@ input:focus {
     margin-right: 10px;
   }  
 }
+
+.sideBar {
+  transition: 0.2s;
+  background-color: #415B76;      
+  position: absolute;
+  display: flex;
+  flex-direction: column;  
+  width: 300px;
+  height: calc(100vh - 60px);  
+  left: -300px;
+
+  &.active {
+    left: 0;
+  }
+
+  .sideBar__link {
+    text-decoration: none;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    color: $white_color;
+    background: rgba(44, 62, 80, 0.55);
+    
+    border-bottom: 1px rgba(44, 62, 80, 0.70) solid;    
+
+    &.selected {
+      background: rgba(44, 62, 80, 0.85);
+    }
+
+    i {
+      width: 46px;
+      font-size: 30px;
+      padding-left: 16px;      
+    }
+  }
+}
