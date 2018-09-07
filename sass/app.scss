@@ -28,6 +28,37 @@ input:focus {
   border-bottom: $darkBlue_color 2px solid;  
 }
 
+.dashboardBoxWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+
+
+  .dashboardBox {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $darkBlue_color;
+    background: #ffffff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
+    
+    .dashboardBox__title {
+      font-size: 26px;
+    }
+
+    .dashboardBox__value {
+      font-size: 56px;
+      margin-top: 32px;
+    }
+  }
+}
+
+
+
 
 .navbar{
   width: 100%;

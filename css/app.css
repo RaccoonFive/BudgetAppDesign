@@ -20,6 +20,27 @@ input::placeholder {
 input:focus {
   border-bottom: #2C3E50 2px solid; }
 
+.dashboardBoxWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px; }
+  .dashboardBoxWrapper .dashboardBox {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2C3E50;
+    background: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1); }
+    .dashboardBoxWrapper .dashboardBox .dashboardBox__title {
+      font-size: 26px; }
+    .dashboardBoxWrapper .dashboardBox .dashboardBox__value {
+      font-size: 56px;
+      margin-top: 32px; }
+
 .navbar {
   width: 100%;
   height: 60px;
