@@ -121,11 +121,15 @@ input:focus {
     align-items: center;
     color: $white_color;
     background: rgba(44, 62, 80, 0.55);
-    
     border-bottom: 1px rgba(44, 62, 80, 0.70) solid;    
+    transition: background-color 0.2s ease-in-out;
 
     &.selected {
       background: rgba(44, 62, 80, 0.85);
+    }
+
+    &:hover {
+      background-color: lighten($darkBlue_color, 8%);        
     }
 
     i {
