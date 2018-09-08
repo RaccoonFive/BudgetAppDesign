@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/dashboard.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/application.js"></script>
   <title>Dashboard</title>
@@ -53,7 +54,7 @@
   </div>
   
   <nav class="breadcrumb">
-    <a class="breadcrumb__link">Test</a>
+    <a class="breadcrumb__link">Tableau de bord</a>
   </nav>  
 
 
@@ -79,11 +80,39 @@
     </div>       
   </div>
 
-  <div class="container_graph">
-    
+  <div class="graphBoxWrapper">
+    <div class="graphBox">            
+      <h1 class="graphBox__title">Revenus vs Dépenses</h1>
+      <div class="graphBox__chart">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>   
   </div>
-
-
-  
 </body>
+
+<script>  
+  var ctx = document.getElementById("myChart");
+  var myChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ["Dépenses", "Revenus"],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19],
+        backgroundColor: [
+          '#2C3E50',
+          '#3498DB',
+        ],
+        borderColor: [
+          '#2C3E50',
+          '#3498DB'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true      
+    }
+  });
+</script>
 </html>
