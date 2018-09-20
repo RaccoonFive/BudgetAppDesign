@@ -110,6 +110,8 @@ input:focus {
   width: 300px;
   height: calc(100vh - 60px);  
   left: -300px;
+  top: 60px;
+  z-index: 20000;
 
   &.active {
     left: 0;

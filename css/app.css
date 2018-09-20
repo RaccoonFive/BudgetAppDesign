@@ -78,7 +78,9 @@ input:focus {
   flex-direction: column;
   width: 300px;
   height: calc(100vh - 60px);
-  left: -300px; }
+  left: -300px;
+  top: 60px;
+  z-index: 20000; }
   .sideBar.active {
     left: 0; }
   .sideBar .sideBar__link {

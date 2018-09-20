@@ -30,6 +30,7 @@
       </a>
     </div>    
   </nav>
+
   
   <div class="sideBar">
     <a href="/dashboard.html" class="sideBar__link selected">
@@ -82,37 +83,75 @@
 
   <div class="graphBoxWrapper">
     <div class="graphBox">            
-      <h1 class="graphBox__title">Revenus vs Dépenses</h1>
+      <h1 class="graphBox__title">Revenus / Dépenses</h1>
       <div class="graphBox__chart">
-        <canvas id="myChart"></canvas>
+        <canvas id="myChart1"></canvas>
       </div>
     </div>   
+
+    <div class="graphBox">
+      <h1 class="graphBox__title">Répartition des catégories de dépenses</h1>
+      <div class="graphBox__chart">
+        <canvas id="myChart2"></canvas>
+      </div>
+    </div>
   </div>
 </body>
 
-<script>  
-  var ctx = document.getElementById("myChart");
-  var myChart = new Chart(ctx, {
-    type: 'pie',
-    data: {
-      labels: ["Dépenses", "Revenus"],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19],
-        backgroundColor: [
-          '#2C3E50',
-          '#3498DB',
-        ],
-        borderColor: [
-          '#2C3E50',
-          '#3498DB'
-        ],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      responsive: true      
-    }
-  });
+<script>
+  $(document).ready(function () {
+    var ctx1 = document.getElementById("myChart1");
+    var myChart1 = new Chart(ctx1, {
+      type: 'pie',
+      data: {
+        labels: ["Dépenses", "Revenus"],
+        datasets: [{
+          data: [12, 19],
+          backgroundColor: [
+            '#2C3E50',
+            '#3498DB',
+          ],
+          borderColor: [
+            '#2C3E50',
+            '#3498DB'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true
+      }
+    });
+
+    var ctx2 = document.getElementById("myChart2");
+    var myChart2 = new Chart(ctx2, {
+      type: 'pie',
+      data: {
+        labels: ["Catégorie 1", "Catégorie 2", "Catégorie 3", "Catégorie 4"],
+        datasets: [{
+          data: [12, 19, 32, 10],
+          backgroundColor: [
+            '#2C3E50',
+            '#3498DB',
+            '#B0CEFF',
+            '#849BBF',
+          ],
+          borderColor: [
+            '#2C3E50',
+            '#3498DB',
+            '#B0CEFF',
+            '#849BBF',
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        legend: {
+
+        }
+      }
+    });
+  })
 </script>
 </html>
