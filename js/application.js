@@ -8,3 +8,12 @@ $(document).ready(function (event) {
     
   });
 });
+
+
+////
+// Close sidemenu
+$(document).click(function(event) {
+  if (!$(event.target).closest('.sideBar').length && !$(event.target).is($('#sideBarBtn'))) {
+    $('.sideBar').removeClass('active');
+  }
+});
