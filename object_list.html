@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/action_list.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/application.js"></script>
+  <title>Object List</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__sideMenuButton">
+      <i class="icon icon-ic_menu_48px" id="sideBarBtn"></i>
+    </div>
+  
+    <div class="navbar__links">
+      <a href="#" class="selected">
+        <i class="icon icon-ic_person_48px"></i>
+        Mon compte
+      </a>
+  
+      <a href="index.html">
+        <i class="icon icon-ic_subdirectory_arrow_left_48px"></i>
+        Déconnexion
+      </a>
+    </div>
+  </nav>
+
+  <div class="sideBar">
+    <a href="/dashboard.html" class="sideBar__link selected">
+      <i class="icon icon-ic_web_48px"></i>
+      Tableau de bord
+    </a>
+  
+    <a href="/object_list.html" class="sideBar__link">
+      <i class="icon icon-ic_file_download_48px"></i>
+      Revenus
+    </a>
+  
+    <a href="/object_list.html" class="sideBar__link">
+      <i class="icon icon-ic_file_upload_48px"></i>
+      Dépenses
+    </a>
+  
+    <a href="/object_list.html" class="sideBar__link">
+      <i class="icon icon-ic_folder_open_48px"></i>
+      Catégories de dépenses
+    </a>
+  </div>
+
+  <nav class="breadcrumb">
+    <a class="breadcrumb__link">Tableau de bord</a>
+  </nav>
+
+  <div class="listHeader">
+    <h1 class="listHeader__title">Dépenses</h1>    
+    <a class="listHeader__btn" href="">
+    </a>    
+  </div>
+
+  <table class="listTable">
+    <tr class="listTable__header">
+      <th style="width: 350px;">Nom</th>
+      <th style="width: 400px;">Montant</th>
+      <th style="width: 400px;">Catégorie</th>
+      <th></th>
+    </tr>
+
+    <tr>
+      <th>Cellulaire</th>
+      <th>40.00$</th>
+      <th>Abonements</th>
+      <th><i class="icon icon-ic_launch_48px listTable__edit"></i><i class="icon icon-ic_launch_48px listTable__delete"></i></th>
+    </tr>
+
+    <tr>
+      <th>Cellulaire</th>
+      <th>40.00$</th>
+      <th>Abonements</th>
+      <th></th>
+    </tr>
+
+    <tr>
+      <th>Cellulaire</th>
+      <th>40.00$</th>
+      <th>Abonements</th>
+      <th></th>
+    </tr>
+
+    <tr>
+      <th>Cellulaire</th>
+      <th>40.00$</th>
+      <th>Abonements</th>
+      <th></th>
+    </tr>
+
+    <tr>
+      <th>Cellulaire</th>
+      <th>40.00$</th>
+      <th>Abonements</th>
+      <th></th>
+    </tr>
+  </table>
+</body>
+</html>
