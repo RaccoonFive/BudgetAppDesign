@@ -37,6 +37,7 @@ input:focus {
   background: $darkBlue_color;  
   display: flex;  
   justify-content: flex-start;
+  position: fixed;
 
   .navbar__sideMenuButton {
     height: 100%;            
@@ -94,6 +95,7 @@ input:focus {
   background: $primary_color;
   padding-left: 10px;
   box-sizing: border-box;
+  margin-top: 60px;
   
   .breadcrumb__link {
     color: #ffffff;

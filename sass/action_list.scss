@@ -2,7 +2,6 @@
 
 html, body {
   margin: 0;
-  height: 100%;
   padding: 0;
   background-color: $white_color;
   display: flex;
@@ -79,10 +78,12 @@ html, body {
   .listTable__edit{
     font-size: 26px;
     color: $darkBlue_color;
+    cursor: pointer;
   }
 
   .listTable__delete{
     font-size: 26px;
     color: $accent_color;
+    cursor: pointer;
   }
 }
