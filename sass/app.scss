@@ -1,4 +1,4 @@
-@import 'variables';
+@import './variables';
 
 
 * {
@@ -8,27 +8,6 @@
 body{
   margin: 0;
 }
-
-input {
-  color: $darkBlue_color;
-  font-size: 18px;    
-  border-bottom: lighten($darkBlue_color, 35%) 2px solid;  
-  width: 100%;
-  display: block;
-  padding-bottom: 5px;
-  padding-left: 4px;
-  box-sizing: border-box;
-}
-
-input::placeholder {
-  color: lighten($darkBlue_color, 35%);
-}
-
-input:focus {
-  border-bottom: $darkBlue_color 2px solid;  
-}
-
-
 
 .navbar{
   width: 100%;
@@ -165,22 +144,75 @@ input:focus {
   }
 
   .popup__content{
+    cursor: auto;
     width: 800px;
     height: 500px;
     background-color: $white_color;
     display: grid;
-    grid-template-rows: 80px 1fr 80px;
+    grid-template-rows: 80px 1fr 80px;    
 
     .popup__header{
       background: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      color: $darkBlue_color;
     }
 
     .popup__form{
+      padding: 20px;
 
+      .popup__field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        label {
+          font-size: 1.1em;
+          color: $darkBlue_color; 
+          margin-bottom: 3px;
+        }
+
+        input {
+          border: 1px solid $darkBlue_color;
+          background: #ffffff;
+          height: 30px;
+          font-size: 1em;
+          padding: 0px 5px 0px 5px;
+        }
+      }
     }
 
-    .popup__footer{
+    .popup__footer {
       background: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+
+      .popup__saveBtn {
+        background: $accent_color;
+        color: #ffffff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 26px;
+        height: 42px;
+        width: 120px;
+        margin-right: 10px;
+      }
+
+      .popup__cancelBtn {
+        background: $darkBlue_color;
+        color: #ffffff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 26px;
+        height: 42px;
+        width: 120px;
+      }
     }
   }
 

@@ -7,6 +7,24 @@ html, body {
   font-family: $roboto_font;
 }
 
+input {
+  color: $darkBlue_color;
+  font-size: 18px;    
+  border-bottom: lighten($darkBlue_color, 35%) 2px solid;  
+  width: 100%;
+  display: block;
+  padding-bottom: 5px;
+  padding-left: 4px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: lighten($darkBlue_color, 35%);
+}
+
+input:focus {
+  border-bottom: $darkBlue_color 2px solid;  
+}
 
 body {
   background: radial-gradient(at bottom left, lighten($primary_color, 30%), $primary_color);
