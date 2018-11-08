@@ -134,6 +134,22 @@ body {
           height: 30px;
           font-size: 1em;
           padding: 0px 5px 0px 5px; }
+        .popup .popup__content .popup__form .popup__field select {
+          border: 1px solid #2C3E50;
+          background: #ffffff;
+          height: 32px;
+          font-size: 1em;
+          padding: 0px 5px 0px 5px;
+          -webkit-appearance: none;
+             -moz-appearance: none;
+                  appearance: none;
+          outline: none; }
+        .popup .popup__content .popup__form .popup__field select:required:invalid {
+          color: gray; }
+        .popup .popup__content .popup__form .popup__field option[value=""][disabled] {
+          display: none; }
+        .popup .popup__content .popup__form .popup__field option {
+          color: #2C3E50; }
     .popup .popup__content .popup__footer {
       background: #ffffff;
       display: flex;

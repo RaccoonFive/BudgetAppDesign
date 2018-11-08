@@ -180,6 +180,28 @@ body{
           font-size: 1em;
           padding: 0px 5px 0px 5px;
         }
+
+        select {
+          border: 1px solid $darkBlue_color;
+          background: #ffffff;
+          height: 32px;
+          font-size: 1em;
+          padding: 0px 5px 0px 5px; 
+          appearance: none;   
+          outline: none; 
+        }
+
+        select:required:invalid {
+          color: gray;
+        }
+
+        option[value=""][disabled] {
+          display: none;
+        }
+
+        option {
+          color: $darkBlue_color;
+        }
       }
     }
 
